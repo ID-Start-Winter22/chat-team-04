@@ -1,0 +1,51 @@
+version: "3.0"
+
+stories:
+
+
+# bei jeder story: - nicht vergessen & richtige Einrückung!
+- story: introductionWithExplanation  
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: utter_explanationQuestion
+  - intent: positive 
+  - action: utter_explanation
+
+
+
+- story: introductionNoExplanation 
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_name
+  - action: utter_explanationQuestion
+  - intent: negative 
+
+       
+
+- story: greet_with_name
+  steps:
+  - intent: greet_formal
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: action_store_name
+  - action: utter_greet_with_name
+
+- story: greet_with_name2
+  steps:
+  - intent: greet
+  - action: action_store_name
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: utter_greet_with_name
+
+- story: Ask the bot if it remembers user's name
+  steps:
+  - intent: bot_challenge_name
+  - action: action_get_name
+
+- story: Ask for travel time between two MVG stations
+  steps:
+  - intent: ask_travel_time
+  - action: action_get_travel_time
