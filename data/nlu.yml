@@ -3,16 +3,16 @@ version: "3.0"
 nlu:
 - intent: positive # klein großschreibung ??????? 
   examples: |
-    - ja -
+    - ja
     - yes 
     - ja bitte 
     - bitte 
     - auf jeden fall 
-    - jo 
+    - jo
     - yo 
     - klar 
     - gern 
-    - gerne 
+    - gerne  
     - klaro 
     - ja gerne 
     - ja gern 
