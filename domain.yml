@@ -42,7 +42,7 @@ slots:
   to_station:
     type: text
     influence_conversation: true
-    mappings:
+    mappings: 
     - type: from_entity
       entity: to_station
 
