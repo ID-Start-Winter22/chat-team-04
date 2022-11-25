@@ -58,10 +58,10 @@ nlu:
     - Hallo
     - hallo
 
-- intent: greet_formal
-  examples: |
-    - guten Tag
-    - guten Abend
+# - intent: greet_formal
+#   examples: |
+#     - guten Tag
+#     - guten Abend
 
 
 - intent: goodbye
