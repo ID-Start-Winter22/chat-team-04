@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.1"
 
 intents:
   - greet
@@ -8,11 +8,11 @@ intents:
   - bot_challenge_name
   - positive 
   - negative 
-  
+
+
 actions:
   - action_store_name
   - action_get_name
-
 
 
 entities:
@@ -57,8 +57,6 @@ responses:
 
   utter_explanation:
   - text: "Als erstes möchte ich mehr über deine Persönlichkeit erfahren. Dann stelle ich dir ein paar Fragen ;) Und zu guter Letzt generier ich dir deine individuelle Inspiration! Klingt das nicht toll? :-) (Ich kann dir am Ende auch ein Moodboard schicken xoxo.)"
-  
-
 
 session_config:
   session_expiration_time: 60

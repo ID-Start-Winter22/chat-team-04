@@ -1,7 +1,7 @@
 version: "3.0"
 
 nlu:
-- intent: positive # klein großschreibung ??????? 
+- intent: positive
   examples: |
     - ja
     - yes 
@@ -57,11 +57,9 @@ nlu:
     - Servus
     - Hallo
     - hallo
+    - Guten Abend 
+    - N'abend 
 
-- intent: greet_formal
-  examples: |
-    - guten Tag
-    - guten Abend
 
 
 - intent: goodbye
@@ -103,6 +101,5 @@ nlu:
     - Wer bin ich?
     - Wie heisse ich?
     - Erinnerst du dich an meinen Namen?
-
 
 
