@@ -51,6 +51,10 @@ nlu:
     - danke aber nein danke 
     - negativ 
 
+- intent: yes_start
+
+- intent: no_start
+
 - intent: greet
   examples: |
     - hey

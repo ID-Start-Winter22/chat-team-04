@@ -52,14 +52,16 @@ responses:
   utter_greet_with_name:
   - text: "Hey, {username}. Alles klar?"
 
-  utter_explanationQuestion:  
-  - text: "Schön dass du hier bist {username}. ó.O Ich bin Paige und ich versorge dich mit 
-    Inspiration! <333333 Soll ich dir kurz erklären wie ich funktioniere? :----)" 
 
-  utter_explanation:
-  - text: "Als erstes möchte ich mehr über deine Persönlichkeit erfahren. 
+  utter_erklaerung:
+  - text: "Hi {username}! Als erstes möchte ich mehr über deine Persönlichkeit erfahren. 
     Dann stelle ich dir ein paar Fragen ;) Und zu guter Letzt generier ich dir deine 
     individuelle Inspiration! :-) (Ich kann dir am Ende auch ein Moodboard schicken xoxo.)"
+    buttons: 
+      - title: "Ja"
+        payload: "/yes_start"
+      - title: "Nein"
+        payload: "/no_start"
 
   utter_lets_start:
   - text: "Na dann, let's start!"

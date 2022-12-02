@@ -1,29 +1,44 @@
 version: "3.1"
 
 stories:
+- story: giveExplanation
+  steps:
+  - intent: greet
+  - action: utter_greet_ask_name
+  - intent: my_name_is
+  - action: action_store_name
+  - action: utter_erklaerung
+ 
 
+# - story: 
+#   steps:
+#   - intent: greet
+#   - action: utter_greet_ask_name
+#   - intent: my_name_is
+#   - action: action_store_name
+#   - action: utter_erklaerung
 
+  
 # bei jeder story: - nicht vergessen & richtige Einrückung!
-- story: introductionWithExplanation  
-  steps:
-  - intent: greet
-  - action: utter_greet_ask_name
-  - intent: my_name_is
-  - action: action_store_name
-  - action: utter_explanationQuestion
-  - intent: positive 
-  - action: utter_explanation
+# - story: introductionWithExplanation  
+#   steps:
+#   - intent: greet
+#   - action: utter_greet_ask_name
+#   - intent: my_name_is
+#   - action: action_store_name
+#   - action: utter_explanationQuestion
+#   - intent: positive 
+#   - action: utter_explanation
 
 
-- story: introductionNoExplanation 
-  steps:
-  - intent: greet
-  - action: utter_greet_ask_name
-  - intent: my_name_is
-  - action: action_store_name
-  - action: utter_explanationQuestion
-  - intent: negative 
-
+# - story: introductionNoExplanation 
+#   steps:
+#   - intent: greet
+#   - action: utter_greet_ask_name
+#   - intent: my_name_is
+#   - action: action_store_name
+#   - action: utter_explanationQuestion
+#   - intent: negative 
   
 - story: Ask the bot if it remembers user's name
   steps:
