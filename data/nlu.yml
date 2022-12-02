@@ -23,6 +23,19 @@ nlu:
     - Ja 
     - positiv 
     - ich bestätige 
+    - ja alles klar
+    - ja passt
+    - alles gut
+    - alles klar
+    - passt
+    - super
+    - ja super
+    - ok
+    - okay
+    - oke
+    - oki
+    - okidoki
+    - okey
 
 - intent: negative
   examples: |
