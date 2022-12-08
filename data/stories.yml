@@ -7,7 +7,21 @@ stories:
   - action: utter_greet_ask_name
   - intent: my_name_is
   - action: action_store_name
-  - action: utter_erklaerung
+  - action: utter_fragemiterklaerung
+
+- story: askAboutPersonality
+  steps:
+  - intent: yes_start
+  - action: utter_doYouKnowWebsite
+
+- story: iKnowPersonality
+  steps:
+  - intent: yes_iKnow
+  - action: utter_whatsYourType
+  - intent: my_personalitytype_is
+  - action: action_store_personality
+
+
  
 
 # - story: 

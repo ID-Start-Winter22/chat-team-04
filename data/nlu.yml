@@ -55,56 +55,9 @@ nlu:
 
 - intent: no_start
 
-- intent: personality
-  examples: |
-    - INTJ
-    - INTJ-A    
-    - INTJ-T
-    - INTP-A
-    - INTP
-    - INTP-T
-    - ENTJ-A
-    - ENTJ
-    - ENTJ-T 
-    - ENTP-A
-    - ENTP
-    - ENTP-T
-    - INFJ-A
-    - INFJ
-    - INFJ-T
-    - INFP-A
-    - INFP
-    - INFP-T
-    - ENFJ-A
-    - ENFJ
-    - ENFJ-T
-    - ENFP-A
-    - ENFP
-    - ENFP-T
-    - ISTJ-A
-    - ISTJ
-    - ISTJ-T
-    - ISFJ-A
-    - ISFJ
-    - ISFJ-T
-    - ESTJ-A
-    - ESTJ
-    - ESTJ-T
-    - ESFJ-A
-    - ESFJ
-    - ESFJ-T
-    - ISTP-A
-    - ISTP
-    - ISTP-T
-    - ISFP-A
-    - ISFP
-    - ISFP-T
-    - ESTP-A
-    - ESTP
-    - ESTP-T
-    - ESFP-A
-    - ESFP
-    - ESFP-T
+- intent: yes_iKnow
+
+- intent: no_iDont
 
 
 - intent: greet
@@ -164,6 +117,57 @@ nlu:
     - Mein Name ist [Aurelia](username)
     - Ich bin die [Marion](username)
     - [Hans](username)
+
+- intent: my_personalitytype_is
+  examples: |
+    - INTJ (personality_type)
+    - INTJ-A (personality_type)   
+    - INTJ-T (personality_type)
+    - INTP-A (personality_type)
+    - INTP (personality_type)
+    - INTP-T (personality_type)
+    - ENTJ-A (personality_type)
+    - ENTJ (personality_type)
+    - ENTJ-T (personality_type) 
+    - ENTP-A (personality_type)
+    - ENTP (personality_type)
+    - ENTP-T (personality_type)
+    - INFJ-A (personality_type)
+    - INFJ (personality_type)
+    - INFJ-T (personality_type)
+    - INFP-A (personality_type)
+    - INFP (personality_type)
+    - INFP-T (personality_type)
+    - ENFJ-A (personality_type)
+    - ENFJ (personality_type)
+    - ENFJ-T (personality_type)
+    - ENFP-A (personality_type)
+    - ENFP (personality_type)
+    - ENFP-T (personality_type)
+    - ISTJ-A (personality_type)
+    - ISTJ (personality_type)
+    - ISTJ-T (personality_type)
+    - ISFJ-A (personality_type)
+    - ISFJ (personality_type)
+    - ISFJ-T (personality_type)
+    - ESTJ-A (personality_type)
+    - ESTJ (personality_type)
+    - ESTJ-T (personality_type)
+    - ESFJ-A (personality_type)
+    - ESFJ (personality_type)
+    - ESFJ-T (personality_type)
+    - ISTP-A (personality_type)
+    - ISTP (personality_type)
+    - ISTP-T (personality_type)
+    - ISFP-A (personality_type)
+    - ISFP (personality_type)
+    - ISFP-T (personality_type)
+    - ESTP-A (personality_type)
+    - ESTP (personality_type)
+    - ESTP-T (personality_type)
+    - ESFP-A (personality_type)
+    - ESFP (personality_type)
+    - ESFP-T (personality_type)
 
 - intent: bot_challenge_name
   examples: |

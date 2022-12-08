@@ -8,16 +8,22 @@ intents:
   - bot_challenge_name
   - positive 
   - negative 
-  - personality
+  - my_personalitytype_is
+  - yes_start
+  - no_start
+  - yes_iKnow
+  - no_iDont
 
 
 actions:
   - action_store_name
   - action_get_name
+  - action_store_personality
 
 
 entities:
   - username
+  - personality_type
 
 slots:
   username:
@@ -26,6 +32,15 @@ slots:
     mappings:
     - type: from_entity
       entity: username
+  personality_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: personality_type
+
+
+
   
 
 responses:
@@ -50,24 +65,27 @@ responses:
   utter_greet_ask_name:
   - text: "Hey, verrätst du mir deinen Namen? :)"
 
-  utter_greet_with_name:
-  - text: "Hey, {username}. Alles klar?"
-
-
-  utter_erklaerung:
+  utter_fragemiterklaerung:
   - text: "Hi {username}! Als erstes möchte ich mehr über deine Persönlichkeit erfahren. 
     Dann stelle ich dir ein paar Fragen ;) Und zu guter Letzt generier ich dir deine 
-    individuelle Inspiration! :-) (Ich kann dir am Ende auch ein Moodboard schicken xoxo.)"
+    individuelle Inspiration! :-) (Ich kann dir am Ende auch ein Moodboard schicken xoxo.) Möchtest
+    du loslegen?"
     buttons: 
       - title: "Ja"
         payload: "/yes_start"
       - title: "Nein"
         payload: "/no_start"
 
+  utter_doYouKnowWebsite:
+  - text: "Kennst du den 16-Personalities Test?"
+    buttons: 
+      - title: "Ja, kenn' ich."
+        payload: "/yes_iKnow"
+      - title: "Nein, kenn ich nicht"
+        payload: "/no_iDont"
 
-
-  
-
+  utter_whatsYourType:
+  - text: "Was ist denn dein Persönlichkeitstyp?"
 
 
 session_config:

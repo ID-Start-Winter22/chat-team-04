@@ -39,3 +39,14 @@ class ActionUserName(Action):
 
         return []
 
+class ActionStorePersonality(Action):
+
+     def name(self):
+         return "action_store_personality"
+         
+     def run(self, dispatcher, tracker, domain):
+        personality_type = tracker.get_slot("personality_type")
+        print("Sender ID: ", tracker.sender_id)
+
+
+        return []
