@@ -55,6 +55,58 @@ nlu:
 
 - intent: no_start
 
+- intent: personality
+  examples: |
+    - INTJ
+    - INTJ-A    
+    - INTJ-T
+    - INTP-A
+    - INTP
+    - INTP-T
+    - ENTJ-A
+    - ENTJ
+    - ENTJ-T 
+    - ENTP-A
+    - ENTP
+    - ENTP-T
+    - INFJ-A
+    - INFJ
+    - INFJ-T
+    - INFP-A
+    - INFP
+    - INFP-T
+    - ENFJ-A
+    - ENFJ
+    - ENFJ-T
+    - ENFP-A
+    - ENFP
+    - ENFP-T
+    - ISTJ-A
+    - ISTJ
+    - ISTJ-T
+    - ISFJ-A
+    - ISFJ
+    - ISFJ-T
+    - ESTJ-A
+    - ESTJ
+    - ESTJ-T
+    - ESFJ-A
+    - ESFJ
+    - ESFJ-T
+    - ISTP-A
+    - ISTP
+    - ISTP-T
+    - ISFP-A
+    - ISFP
+    - ISFP-T
+    - ESTP-A
+    - ESTP
+    - ESTP-T
+    - ESFP-A
+    - ESFP
+    - ESFP-T
+
+
 - intent: greet
   examples: |
     - hey

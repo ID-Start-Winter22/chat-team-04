@@ -8,6 +8,7 @@ intents:
   - bot_challenge_name
   - positive 
   - negative 
+  - personality
 
 
 actions:
@@ -63,8 +64,7 @@ responses:
       - title: "Nein"
         payload: "/no_start"
 
-  utter_lets_start:
-  - text: "Na dann, let's start!"
+
 
   
 
