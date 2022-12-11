@@ -29,8 +29,11 @@ stories:
   steps: 
   - intent: no_iDont
   - action: utter_ThisIsPersonalityTest
+  - intent: Test_Machen
+  - action: utter_ThisIsLinkToPersonalityTest
   - intent: my_personalitytype_is
   - action: action_store_personality
+
 
 
 

@@ -13,6 +13,8 @@ intents:
   - no_start
   - yes_iKnow
   - no_iDont
+  - kein_Test
+  - Test_Machen
 
 
 actions:
@@ -57,7 +59,7 @@ responses:
   - text: "Toll weiter so."
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Tschüss! Danke dass du da warst, ich werd' dich vermissen <3"
 
   utter_iamabot:
   - text: "Ich bin ein Chatbot, powered by Rasa."
@@ -88,9 +90,20 @@ responses:
   - text: "Was ist denn dein Persönlichkeitstyp?"
 
   utter_ThisIsPersonalityTest:
-  - text: "Hmm? Okay hier der Link frisch für dich: https://www.16personalities.com/ Und welcher Typ ist bei dir rausgekommen?"
-  # das hier als custom action machen mit time reminder nach gewisser minuten anzahl? 
+  - text: "Hmm? Willst du ihn vielleicht jetzt machen?"
+    buttons: 
+      - title: "Ja, gerne!"
+        payload: "/Test_Machen"
+      - title: "Nee"
+        payload: "/kein_Test"
+  
 
+  utter_ThisIsLinkToPersonalityTest:
+  - text: "Okay hier der Link frisch für dich: https://www.16personalities.com/ Und welcher Typ ist bei dir rausgekommen?"
+   # das hier als custom action machen mit time reminder nach gewisser minuten anzahl?
+  
+  utter_OkayNoTest:
+  - text: "Okay, dann ohne Test weiter!"
 
 session_config:
   session_expiration_time: 60
