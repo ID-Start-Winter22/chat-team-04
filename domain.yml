@@ -21,7 +21,7 @@ actions:
   - action_store_name
   - action_get_name
   - action_store_personality
-  # - action_yourTypeIs
+  - action_yourTypeIs
 
 
 entities:

@@ -24,7 +24,7 @@ stories:
   - action: utter_whatsYourType
   - intent: my_personalitytype_is
   - action: action_store_personality
-  # - action: action_yourTypeIs
+  - action: action_yourTypeIs
 
 - story: iDontKnowPersonality
   steps: 
