@@ -59,6 +59,13 @@ nlu:
 
 - intent: no_iDont
 
+- intent: Test_Machen
+
+- intent: kein_Test
+
+
+
+
 
 - intent: greet
   examples: |
