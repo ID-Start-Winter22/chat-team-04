@@ -87,6 +87,10 @@ responses:
   utter_whatsYourType:
   - text: "Was ist denn dein Persönlichkeitstyp?"
 
+  utter_ThisIsPersonalityTest:
+  - text: "Hmm? Okay hier der Link frisch für dich: https://www.16personalities.com/ Und welcher Typ ist bei dir rausgekommen?"
+  # das hier als custom action machen mit time reminder nach gewisser minuten anzahl? 
+
 
 session_config:
   session_expiration_time: 60

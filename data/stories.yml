@@ -9,6 +9,10 @@ stories:
   - action: action_store_name
   - action: utter_fragemiterklaerung
 
+# - story: DontStart
+#   steps: 
+
+
 - story: askAboutPersonality
   steps:
   - intent: yes_start
@@ -20,6 +24,14 @@ stories:
   - action: utter_whatsYourType
   - intent: my_personalitytype_is
   - action: action_store_personality
+
+- story: iDontKnowPersonality
+  steps: 
+  - intent: no_iDont
+  - action: utter_ThisIsPersonalityTest
+  - intent: my_personalitytype_is
+  - action: action_store_personality
+
 
 
  
