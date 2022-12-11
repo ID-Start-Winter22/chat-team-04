@@ -1,0 +1,66 @@
+:root{
+    --pink: #ED1E79;
+    --rosa: #FFCCE2;
+    --petrol: #002A36;
+
+}
+
+button.css-1yzw4ak{
+    background-color: var(--petrol);
+}
+
+button.css-1yzw4ak svg path{
+    fill: var(--rosa);
+}
+
+body{
+    background-color: var(--rosa);
+}
+
+img.Schriftlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    background-color: var(--pink);
+
+}
+
+body{
+    margin: 0px;
+}
+
+div.Infofeld{
+    margin: 40px;
+    background-color: var(--petrol);
+    width: 50%;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+h2{
+    font-family: "Tw Cen MT";
+    margin-top: 8px;
+    font-size: 40px;
+    color: var(--rosa);
+    
+}
+p.Einleitungstext{
+    font-family: "Malgun Gothic";
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    line-height: 1.5;
+}
+
+img.Lasschatten{
+    position: absolute;
+    bottom: 20px;
+    height: 65px;
+    right: 90px;
+}
