@@ -60,6 +60,7 @@ class yourTypeIs(Action):
          return "action_yourTypeIs"
          
      def run(self, dispatcher, tracker, domain):
+        username = tracker.get_slot("username")
         personality_type = tracker.get_slot("personality_type")
         personality_type = personality_type[:4]
 
@@ -97,6 +98,19 @@ class yourTypeIs(Action):
             dispatcher.utter_message("Du bist ESTP")
         elif personality_type == "ESFP":
             dispatcher.utter_message("Du bist ESFP")
+
+        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser {}! Aber um dir die perfekte Idee zu liefern, lass mich dir ein paar Fragen stellen! An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
+        
+        return []
+
+class ActionStoreColor(Action):
+
+     def name(self):
+         return "action_store_color"
+         
+     def run(self, dispatcher, tracker, domain):
+        color = tracker.get_slot("color")
+        print("Sender ID: ", tracker.sender_id)
 
         return []
        
