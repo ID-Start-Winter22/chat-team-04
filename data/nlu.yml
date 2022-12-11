@@ -127,7 +127,7 @@ nlu:
 
 - intent: my_personalitytype_is
   examples: |
-    - INTJ (personality_type)
+    - [INTJ](personality_type)
     - INTJ-A (personality_type)   
     - INTJ-T (personality_type)
     - INTP-A (personality_type)

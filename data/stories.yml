@@ -24,6 +24,7 @@ stories:
   - action: utter_whatsYourType
   - intent: my_personalitytype_is
   - action: action_store_personality
+  # - action: action_yourTypeIs
 
 - story: iDontKnowPersonality
   steps: 
@@ -34,7 +35,10 @@ stories:
   - intent: my_personalitytype_is
   - action: action_store_personality
 
-
+- story: IdontWantToDoTest
+  steps:
+  - intent: kein_Test
+  - action: utter_KeinTestAlternative
 
 
  

@@ -47,6 +47,22 @@ class ActionStorePersonality(Action):
      def run(self, dispatcher, tracker, domain):
         personality_type = tracker.get_slot("personality_type")
         print("Sender ID: ", tracker.sender_id)
-
+        if not personality_type :
+            dispatcher.utter_message(" Du hast mir deine personality nicht genannt :(")
+        else:
+            dispatcher.utter_message(' Du bist {}'.format(personality_type))
 
         return []
+
+# class yourTypeIs(Action):
+#      def name(self):
+#          return "action_yourTypeIs"
+         
+#      def run(self, dispatcher, tracker, domain):
+#         personality_type = tracker.get_slot("personality_type")
+#         if not personality_type :
+#             dispatcher.utter_message(" Du hast mir deine personality nicht genannt :(")
+#         else:
+#             dispatcher.utter_message(' Du bist {}'.format(personality_type))
+#         return []
+       

@@ -21,6 +21,7 @@ actions:
   - action_store_name
   - action_get_name
   - action_store_personality
+  # - action_yourTypeIs
 
 
 entities:
@@ -96,6 +97,9 @@ responses:
         payload: "/Test_Machen"
       - title: "Nee"
         payload: "/kein_Test"
+
+  utter_KeinTestAlternative:
+  - text: "Schade Marmelade :( Dann stelle ich dir sofort ein paar Fragen :3"
   
 
   utter_ThisIsLinkToPersonalityTest:
