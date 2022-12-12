@@ -16,6 +16,10 @@ intents:
   - kein_Test
   - Test_Machen
   - Question_eins_color
+  # - button_Style
+  # - styleThree
+  # - styleTwo
+  - styleOne
   
 
 actions:
@@ -25,6 +29,7 @@ actions:
   - action_yourTypeIs
   - action_store_color
   - action_this_is_your_color_and_question_two
+  - action_store_Style
 
 
 entities:

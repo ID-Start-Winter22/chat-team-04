@@ -130,21 +130,46 @@ class ActionThisIsYourColor(Action):
                      "Impressionismus","Naturalismus","Post-Impressionismus","Symbolismus",
                      "Jugendstil","Expressionismus","Kubismus","Futurismus","Dadaismus",
                      "Präzisionismus","Art","Deco","Bauhaus","Surrealismus","Neue Sachlichkeit",
-                     "Abstrakter Expressionismus","Pop-Art","Hyperrealismus/Fotorealismus",
-                     "Neo-expressionismus","Graffiti","Streetart","Suprematismus"]
+                     "Abstrakter Expressionismus","Pop-Art","Hyperrealismus",
+                     "Neo-expressionismus","Graffiti","Suprematismus"]
 
         myList = random.sample(listStile, 3)
         styleOne, styleTwo, styleThree = myList
 
+        art_style = tracker.get_slot("art_style")
         #dispatcher.utter_message("Welchen Stil würdest du wählen?")
         buttons = []
 
+        # buttons.append({"title": str(styleOne), "payload": f"/{str(styleOne)}{art_style}"})
+        # buttons.append({"title": str(styleTwo), "payload": f"/{str(styleTwo)}{art_style}"})
+        # buttons.append({"title": str(styleThree), "payload": f"/{str(styleThree)}{art_style}"})
+
+        # buttons.append({"title": str(styleOne), "payload": '/button_Style {"art_style": f"{str(styleOne)}"}'});
+    
+        # buttons.append({"title": str(styleTwo), "payload": '/button_Style{{"art_style": f"{str(styleOne)}"}}'}); 
+
+        # buttons.append({"title": str(styleThree), "payload":'/button_Style{{"art_style": f"{str(styleOne)}"}}'});
+
         buttons.append({"title": str(styleOne), "payload": str(styleOne)})
+    
         buttons.append({"title": str(styleTwo), "payload": str(styleTwo)})
+
         buttons.append({"title": str(styleThree), "payload": str(styleThree)})
-        
+
         dispatcher.utter_message(text= "Welchen Stil würdest du wählen?", buttons=buttons)
 
         print("Sender ID: ", tracker.sender_id)
 
         return []  
+
+class ActionStoreColor(Action):
+
+     def name(self):
+         return "action_store_Style"
+         
+     def run(self, dispatcher, tracker, domain):
+        art_style = tracker.get_slot("art_style")
+        dispatcher.utter_message("Dein Lieblingsstil ist {}".format(art_style))
+
+        return []
+
