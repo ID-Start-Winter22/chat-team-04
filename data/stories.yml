@@ -8,7 +8,6 @@ stories:
   - intent: my_name_is
   - action: action_store_name
   - action: utter_fragemiterklaerung
-  - action: action_store_color
 
 # - story: DontStart
 #   steps: 
@@ -33,7 +32,7 @@ stories:
   - action: action_yourTypeIs
   - intent: Question_eins_color
   - action: action_store_color
-  - action: utter_TestThisIsYourColor # nur als test um zu schauen ob color gespeichert 
+  - action: action_this_is_your_color_and_question_two # nur als test um zu schauen ob color gespeichert 
 
 - story: iDontKnowPersonality
   steps: 

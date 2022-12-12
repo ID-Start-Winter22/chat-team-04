@@ -16,7 +16,7 @@ intents:
   - kein_Test
   - Test_Machen
   - Question_eins_color
-
+  
 
 actions:
   - action_store_name
@@ -24,12 +24,14 @@ actions:
   - action_store_personality
   - action_yourTypeIs
   - action_store_color
+  - action_this_is_your_color_and_question_two
 
 
 entities:
   - username
   - personality_type
   - color 
+  - art_style 
 
 slots:
   username:
@@ -50,6 +52,12 @@ slots:
     mappings:
     - type: from_entity
       entity: color
+  art_style:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: art_style
 
 
 
@@ -118,8 +126,7 @@ responses:
   utter_OkayNoTest:
   - text: "Okay, dann ohne Test! Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! "
 
-  utter_TestThisIsYourColor:
-  - text: "Deine ausgewählte Farbe ist {color}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde.."
+
 
 
 session_config:

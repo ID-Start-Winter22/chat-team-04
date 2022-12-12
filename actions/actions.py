@@ -8,6 +8,9 @@
 from sys import displayhook
 from typing import Any, Text, Dict, List
 from pyparsing import nestedExpr
+import random 
+
+
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -113,4 +116,35 @@ class ActionStoreColor(Action):
         print("Sender ID: ", tracker.sender_id)
 
         return []
-       
+
+class ActionThisIsYourColor(Action):
+     def name(self):
+         return "action_this_is_your_color_and_question_two"
+
+     def run(self, dispatcher, tracker, domain):
+        color  = tracker.get_slot("color")
+        dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde..'.format(color))
+        
+        listStile = ["Romantik", "Gotik", "Renaissance","Manierismus","Barock", \
+                     "Rokoko","Klassizismus","Romantik","Realismus","PräRaffaelismus",
+                     "Impressionismus","Naturalismus","Post-Impressionismus","Symbolismus",
+                     "Jugendstil","Expressionismus","Kubismus","Futurismus","Dadaismus",
+                     "Präzisionismus","Art","Deco","Bauhaus","Surrealismus","Neue Sachlichkeit",
+                     "Abstrakter Expressionismus","Pop-Art","Hyperrealismus/Fotorealismus",
+                     "Neo-expressionismus","Graffiti","Streetart","Suprematismus"]
+
+        myList = random.sample(listStile, 3)
+        styleOne, styleTwo, styleThree = myList
+
+        #dispatcher.utter_message("Welchen Stil würdest du wählen?")
+        buttons = []
+
+        buttons.append({"title": str(styleOne), "payload": str(styleOne)})
+        buttons.append({"title": str(styleTwo), "payload": str(styleTwo)})
+        buttons.append({"title": str(styleThree), "payload": str(styleThree)})
+        
+        dispatcher.utter_message(text= "Welchen Stil würdest du wählen?", buttons=buttons)
+
+        print("Sender ID: ", tracker.sender_id)
+
+        return []  

@@ -65,6 +65,8 @@ nlu:
 
 
 
+
+
 - intent: Question_eins_color
   examples: |
     - [Grün](color)
