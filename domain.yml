@@ -15,6 +15,7 @@ intents:
   - no_iDont
   - kein_Test
   - Test_Machen
+  - Question_eins_color
 
 
 actions:
@@ -22,11 +23,13 @@ actions:
   - action_get_name
   - action_store_personality
   - action_yourTypeIs
+  - action_store_color
 
 
 entities:
   - username
   - personality_type
+  - color 
 
 slots:
   username:
@@ -41,6 +44,12 @@ slots:
     mappings:
     - type: from_entity
       entity: personality_type
+  color:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: color
 
 
 
@@ -107,7 +116,11 @@ responses:
    # das hier als custom action machen mit time reminder nach gewisser minuten anzahl?
   
   utter_OkayNoTest:
-  - text: "Okay, dann ohne Test weiter!"
+  - text: "Okay, dann ohne Test! Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! "
+
+  utter_TestThisIsYourColor:
+  - text: "Deine ausgewählte Farbe ist {color}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde.."
+
 
 session_config:
   session_expiration_time: 60

@@ -65,7 +65,39 @@ nlu:
 
 
 
-
+- intent: Question_eins_color
+  examples: |
+    - [Grün](color)
+    - [Gelb](color)
+    - [Blau](color)
+    - [Rot](color)
+    - [Schwarz](color) 
+    - [Weiß](color)
+    - [Pink](color) 
+    - [Rosa](color)
+    - [Fuchsia](color) 
+    - [Altrosa](color)
+    - [Hellblau](color) 
+    - [Dunkelblau](color) 
+    - [Hellgrün](color)
+    - [Dunkelgrün](color) 
+    - [Hellrot](color) 
+    - [Dunkelrot](color) 
+    - [Lila](color) 
+    - [Violett](color) 
+    - [Purpur](color)
+    - [Orange](color) 
+    - [Hellgelb](color)
+    - [Pastellpink](color) 
+    - [Pastellgelb](color)
+    - [Pastellrosa](color)
+    - [Pastellrot](color)
+    - [Pastellblau](color) 
+    - [Pastellgrün](color) 
+    - [Limette](color) 
+    - [Tannengrün](color) 
+    - [Grasgrün](color)
+    - Ich denke an [Grün](color)
 
 - intent: greet
   examples: |
