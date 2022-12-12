@@ -14,6 +14,7 @@ button.css-1yzw4ak svg path{
 }
 
 body{
+    background-image: url('Pictures/TheGreatWave.png');
     background-color: var(--rosa);
 }
 
@@ -37,7 +38,7 @@ body{
 
 div.Infofeld{
     margin: 40px;
-    background-color: var(--pink);
+    background-color: #fff;
     width: 50%;
     padding: 20px;
     border-radius: 7px;
@@ -47,14 +48,14 @@ h2{
     font-family: "Tw Cen MT";
     margin-top: 8px;
     font-size: 40px;
-    color: var(--rosa);
+    color: var(--petrol);
     
 }
 p.Einleitungstext{
     font-family: "Malgun Gothic";
     font-size: 25px;
     text-align: justify;
-    color: #fff;
+    color: var(--petrol);
     line-height: 1.5;
 }
 

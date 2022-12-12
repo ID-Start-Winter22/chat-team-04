@@ -123,7 +123,10 @@ class ActionThisIsYourColor(Action):
 
      def run(self, dispatcher, tracker, domain):
         color  = tracker.get_slot("color")
-        dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde..'.format(color))
+        if color == "pink" or "Pink":
+            dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Das ist zufälligerweise auch meine Lieblingsfarbe... glaubt man kaum oder ;)?'.format(color))
+        else:
+            dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde..'.format(color))
         
         listStile = ["Romantik", "Gotik", "Renaissance","Manierismus","Barock", \
                      "Rokoko","Klassizismus","Romantik","Realismus","PräRaffaelismus",
