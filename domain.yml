@@ -16,9 +16,6 @@ intents:
   - kein_Test
   - Test_Machen
   - Question_eins_color
-  # - button_Style
-  # - styleThree
-  # - styleTwo
   - styleOne
   
 
