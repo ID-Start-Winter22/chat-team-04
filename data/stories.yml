@@ -52,35 +52,7 @@ stories:
   - intent: styleOne
   - action: action_store_Style # hier style gespeichert 
 
-# - story: styleThree
-#   steps: 
-#   - intent: no_iDont
-#   - action: utter_ThisIsPersonalityTest
-#   - intent: Test_Machen
-#   - action: utter_ThisIsLinkToPersonalityTest
-#   - intent: my_personalitytype_is
-#   - action: action_store_personality
-#   - action: action_yourTypeIs
-#   - intent: Question_eins_color
-#   - action: action_store_color
-#   - action: action_this_is_your_color_and_question_two
-#   - intent: styleThree
-#   - action: action_store_Style
 
-# - story: styleTwo_Question
-#   steps: 
-#   - intent: no_iDont
-#   - action: utter_ThisIsPersonalityTest
-#   - intent: Test_Machen
-#   - action: utter_ThisIsLinkToPersonalityTest
-#   - intent: my_personalitytype_is
-#   - action: action_store_personality
-#   - action: action_yourTypeIs
-#   - intent: Question_eins_color
-#   - action: action_store_color
-#   - action: action_this_is_your_color_and_question_two
-#   - intent: styleTwo
-#   - action: action_store_Style
 
 - story: IdontWantToDoTest
   steps:
