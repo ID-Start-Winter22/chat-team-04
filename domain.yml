@@ -85,13 +85,11 @@ responses:
   - text: "Ich bin ein Chatbot, powered by Rasa."
 
   utter_greet_ask_name:
-  - text: "Hey, verrätst du mir deinen Namen? :)"
+  - text: "Ahoi Matrose, verrätst du mir deinen Namen? :)"
 
   utter_fragemiterklaerung:
-  - text: "Hi {username}! Als erstes möchte ich mehr über deine Persönlichkeit erfahren. 
-    Dann stelle ich dir ein paar Fragen ;) Und zu guter Letzt generier ich dir deine 
-    individuelle Inspiration! :-) (Ich kann dir am Ende auch ein Moodboard schicken xoxo.) Möchtest
-    du loslegen?"
+  - text: "Hi {username}!  Ich bin Paige und ich liefere dir Inspo. Aber erst will ich dir ein paar Fragen stellen ;) Möchtest
+ du loslegen?"
     buttons: 
       - title: "Ja"
         payload: "/yes_start"
@@ -99,7 +97,7 @@ responses:
         payload: "/no_start"
 
   utter_doYouKnowWebsite:
-  - text: "Kennst du den 16-Personalities Test?"
+  - text: "Kennst du den 16-Personalities Test und weißt du vielleicht deinen Typ? (...Ich bin INFJ falls es dich interessiert!!)"
     buttons: 
       - title: "Ja, kenn' ich."
         payload: "/yes_iKnow"
@@ -107,10 +105,10 @@ responses:
         payload: "/no_iDont"
 
   utter_whatsYourType:
-  - text: "Was ist denn dein Persönlichkeitstyp?"
+  - text: "Was ist denn dein Persönlichkeitstyp? :)"
 
   utter_ThisIsPersonalityTest:
-  - text: "Hmm? Willst du ihn vielleicht jetzt machen?"
+  - text: "Hmm? Haste bock den Test nun zu machen? :)"
     buttons: 
       - title: "Ja, gerne!"
         payload: "/Test_Machen"
@@ -118,11 +116,12 @@ responses:
         payload: "/kein_Test"
 
   utter_KeinTestAlternative:
-  - text: "Schade Marmelade :( Dann stelle ich dir sofort ein paar Fragen :3"
+  - text: "Schade Marmelade :( Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! :3"
   
 
   utter_ThisIsLinkToPersonalityTest:
-  - text: "Okay hier der Link frisch für dich: https://www.16personalities.com/ Und welcher Typ ist bei dir rausgekommen?"
+  - text: "Okay hier der Link, frisch aus dem Ofen: https://www.16personalities.com/ 
+Und welcher Typ ist bei dir rausgekommen? ;-)"
    # das hier als custom action machen mit time reminder nach gewisser minuten anzahl?
   
   utter_OkayNoTest:

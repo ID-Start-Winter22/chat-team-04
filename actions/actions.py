@@ -103,7 +103,7 @@ class yourTypeIs(Action):
         elif personality_type == "ESFP":
             dispatcher.utter_message("Du bist ESFP")
 
-        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser {}! Aber um dir die perfekte Idee zu liefern, lass mich dir ein paar Fragen stellen! An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
+        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser {}! Aber um dir die perfekte Idee zu liefern, muss ich dir noch unbedingt ein, zwei oder sogar drei Fragen stellen! Hmm.. lass überlegen....: An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
         
         return []
 
@@ -177,4 +177,3 @@ class ActionStoreColor(Action):
         dispatcher.utter_message("Dein Lieblingsstil ist {}".format(art_style))
 
         return []
-
