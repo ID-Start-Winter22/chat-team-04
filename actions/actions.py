@@ -34,6 +34,7 @@ class ActionUserName(Action):
 
      def run(self, dispatcher, tracker, domain):
         username = tracker.get_slot("username")
+        username = username[0].upper() + username[1:]
         if not username :
             dispatcher.utter_message(" Du hast mir Deinen Namen nicht gesagt.")
         else:
@@ -123,7 +124,8 @@ class ActionThisIsYourColor(Action):
 
      def run(self, dispatcher, tracker, domain):
         color  = tracker.get_slot("color")
-        if color == "pink" or "Pink":
+        color = color.lower()
+        if color.lower() == "pink":
             dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Das ist zufälligerweise auch meine Lieblingsfarbe... glaubt man kaum oder ;)?'.format(color))
         else:
             dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde..'.format(color))
