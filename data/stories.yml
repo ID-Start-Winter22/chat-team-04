@@ -38,6 +38,10 @@ stories:
   - action: action_this_is_your_color_and_question_two 
   - intent: styleOne
   - action: action_store_Style
+  - action: action_this_is_your_style_and_question_three
+  - action: utter_buttonsFormen
+  - intent: my_form_is
+  - action: action_store_formen
 
 
 - story: iDontKnowPersonalityAndQuestions
@@ -54,7 +58,10 @@ stories:
   - action: action_this_is_your_color_and_question_two
   - intent: styleOne
   - action: action_store_Style # hier style gespeichert 
-
+  - action: action_this_is_your_style_and_question_three
+  - action: utter_buttonsFormen
+  - intent: my_form_is
+  - action: action_store_formen
 
 
 - story: IdontWantToDoTest

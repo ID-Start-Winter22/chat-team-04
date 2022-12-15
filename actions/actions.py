@@ -103,7 +103,9 @@ class yourTypeIs(Action):
         elif personality_type == "ESFP":
             dispatcher.utter_message("Du bist ESFP")
 
-        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser {}! Aber um dir die perfekte Idee zu liefern, muss ich dir noch unbedingt ein, zwei oder sogar drei Fragen stellen! Hmm.. lass überlegen....: An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
+        
+
+        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser Matrose {}! Aber um dir die perfekte Idee zu liefern, muss ich dir noch unbedingt noch ein, zwei oder sogar drei Fragen stellen! Hmm.. lass überlegen....: An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
         
         return []
 
@@ -118,7 +120,7 @@ class ActionStoreColor(Action):
 
         return []
 
-class ActionThisIsYourColor(Action):
+class ActionThisIsYourColorAndStyle(Action):
      def name(self):
          return "action_this_is_your_color_and_question_two"
 
@@ -134,7 +136,7 @@ class ActionThisIsYourColor(Action):
                      "Rokoko","Klassizismus","Romantik","Realismus","PräRaffaelismus",
                      "Impressionismus","Naturalismus","Post-Impressionismus","Symbolismus",
                      "Jugendstil","Expressionismus","Kubismus","Futurismus","Dadaismus",
-                     "Präzisionismus","Art","Deco","Bauhaus","Surrealismus","Neue Sachlichkeit",
+                     "Präzisionismus","Art Deco","Bauhaus","Surrealismus","Neue Sachlichkeit",
                      "Abstrakter Expressionismus","Pop-Art","Hyperrealismus",
                      "Neo-expressionismus","Graffiti","Suprematismus"]
 
@@ -142,18 +144,8 @@ class ActionThisIsYourColor(Action):
         styleOne, styleTwo, styleThree = myList
 
         art_style = tracker.get_slot("art_style")
-        #dispatcher.utter_message("Welchen Stil würdest du wählen?")
+
         buttons = []
-
-        # buttons.append({"title": str(styleOne), "payload": f"/{str(styleOne)}{art_style}"})
-        # buttons.append({"title": str(styleTwo), "payload": f"/{str(styleTwo)}{art_style}"})
-        # buttons.append({"title": str(styleThree), "payload": f"/{str(styleThree)}{art_style}"})
-
-        # buttons.append({"title": str(styleOne), "payload": '/button_Style {"art_style": f"{str(styleOne)}"}'});
-    
-        # buttons.append({"title": str(styleTwo), "payload": '/button_Style{{"art_style": f"{str(styleOne)}"}}'}); 
-
-        # buttons.append({"title": str(styleThree), "payload":'/button_Style{{"art_style": f"{str(styleOne)}"}}'});
 
         buttons.append({"title": str(styleOne), "payload": str(styleOne)})
     
@@ -167,13 +159,47 @@ class ActionThisIsYourColor(Action):
 
         return []  
 
-class ActionStoreColor(Action):
+class ActionStoreStyle(Action):
 
      def name(self):
          return "action_store_Style"
          
      def run(self, dispatcher, tracker, domain):
         art_style = tracker.get_slot("art_style")
+        print("Sender ID: ", tracker.sender_id)
+        
+        return []
+
+class ActionForm(Action):
+     def name(self):
+        return "action_this_is_your_style_and_question_three"
+
+     def run(self,dispatcher, tracker, domain):
+        art_style = tracker.get_slot("art_style")
         dispatcher.utter_message("Dein Lieblingsstil ist {}".format(art_style))
+
+        # dispatcher.utter_message("Welchen Emoji würdest du zum texten nutzen?") # dialog ändern
+
+        # buttons = []
+
+        # buttons.append({"title": "blatt" , "payload": "Blatt"})
+        # buttons.append({"title": "kreis", "payload": "Kreis"})
+        # buttons.append({"title": "dreieck", "payload": "Dreieck"})
+        # buttons.append({"title": "herz", "payload": "Herz"})
+
+        # dispatcher.utter_message(buttons=buttons)
+
+        return []
+
+class ActionStoreForm(Action):
+     def name(self):
+        return "action_store_formen"
+
+     def run(self,dispatcher, tracker, domain):
+        formen_choice = tracker.get_slot("formen_choice")
+        print("Sender ID: ", tracker.sender_id)
+        
+        
+        dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
 
         return []

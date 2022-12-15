@@ -17,6 +17,7 @@ intents:
   - Test_Machen
   - Question_eins_color
   - styleOne
+  - my_form_is
   
 
 actions:
@@ -27,13 +28,16 @@ actions:
   - action_store_color
   - action_this_is_your_color_and_question_two
   - action_store_Style
+  - action_this_is_your_style_and_question_three
+  - action_store_formen # to do, this is your form hier auch  
 
 
 entities:
   - username
   - personality_type
   - color 
-  - art_style 
+  - art_style
+  - formen_choice 
 
 slots:
   username:
@@ -60,7 +64,12 @@ slots:
     mappings:
     - type: from_entity
       entity: art_style
-
+  formen_choice:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: formen_choice
 
 
   
@@ -121,6 +130,17 @@ responses:
   utter_KeinTestAlternative:
   - text: "Schade Marmelade :( Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! :3"
 
+  utter_buttonsFormen:
+  - text: "Welchen Emoji würdest du zum texten nutzen?"
+    buttons: 
+      - title: "Kreis"
+        payload: "Kreis"
+      - title: "Dreieck"
+        payload: "Dreieck"
+      - title: "Blatt"
+        payload: "Blatt"
+      - title: "Herz"
+        payload: "Herz"
 
   
 
