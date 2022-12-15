@@ -17,6 +17,8 @@ from rasa_sdk.executor import CollectingDispatcher
 
 class ActionStoreUserName(Action):
 
+    ### Diese Action ruft den Slot username aus den entities ab 
+
      def name(self):
          return "action_store_name"
          
@@ -28,6 +30,10 @@ class ActionStoreUserName(Action):
 
 
 class ActionUserName(Action):
+
+    ### Diese Action ruft den Slot username auf 
+    ### (noch nicht funktionierend: lowercase in uppercase zum speichern im slot verändern)
+
 
      def name(self):
          return "action_get_name"
@@ -43,6 +49,9 @@ class ActionUserName(Action):
         return []
 
 class ActionStorePersonality(Action):
+
+    ### Diese Action ruft den gespeicherten Slot personality_type ab und kürzt ihn auf 4 Zeichen 
+    ### Außerdem fängt sie den Fehler ab, wenn der Slot nicht belegt ist. 
 
      def name(self):
          return "action_store_personality"
@@ -60,6 +69,12 @@ class ActionStorePersonality(Action):
         return []
 
 class yourTypeIs(Action):
+
+
+    ### Diese Action ruft den gespeicherten Slot personality_type auf
+    ### und gibt je nach Slot Value verschiedene responses zurück 
+
+
      def name(self):
          return "action_yourTypeIs"
          
@@ -111,6 +126,8 @@ class yourTypeIs(Action):
 
 class ActionStoreColor(Action):
 
+    ### Diese Action speichert die gewählte Farbe des Nutzers 
+
      def name(self):
          return "action_store_color"
          
@@ -121,6 +138,12 @@ class ActionStoreColor(Action):
         return []
 
 class ActionThisIsYourColorAndStyle(Action):
+
+     ### Diese Action fragt die gewählte Farbe des Nutzers aus dem Slot ab und gibt custom Responses dazu zurück. 
+     ### Danach fragt sie den präferierten Kunststil des Users ab. 
+     ### Dafür werden für die Buttontitel als Variable 3 random Stile aus einer Liste von Kunsstilen übergeben.
+
+
      def name(self):
          return "action_this_is_your_color_and_question_two"
 
@@ -161,6 +184,8 @@ class ActionThisIsYourColorAndStyle(Action):
 
 class ActionStoreStyle(Action):
 
+    ### Diese Action ruft den Slot art_style auf in dem der gewählte Kunststil des Users gespeichert ist. 
+
      def name(self):
          return "action_store_Style"
          
@@ -171,6 +196,10 @@ class ActionStoreStyle(Action):
         return []
 
 class ActionForm(Action):
+
+    ### Diese Action ruft den Slot mit dem gewählten Kunsstil des Nutzers auf und 
+    ### gibt ihn in einer Response zurück 
+
      def name(self):
         return "action_this_is_your_style_and_question_three"
 
@@ -192,6 +221,9 @@ class ActionForm(Action):
         return []
 
 class ActionStoreForm(Action):
+
+    ### Diese Action ruft den Slot mit der vom Nutzer gewählten Form aus und gibt ihn in einer Response zurück
+
      def name(self):
         return "action_store_formen"
 
