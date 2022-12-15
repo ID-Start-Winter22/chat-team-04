@@ -118,6 +118,7 @@ responses:
 
   utter_whatsYourType:
   - text: "Was ist denn dein Persönlichkeitstyp? :)"
+    image: "https://i.pinimg.com/564x/87/af/be/87afbe7eb3fc6c27b68f623323435832.jpg"
 
   utter_ThisIsPersonalityTest:
   - text: "Hmm? Haste bock den Test nun zu machen? :)"
