@@ -81,6 +81,9 @@ responses:
   utter_goodbye:
   - text: "Tschüss! Danke dass du da warst, ich werd' dich vermissen <3"
 
+  utter_schade_bye:
+  - text: "Uhh? Okay, dann nicht :O Komm zurück, wenn du bereit bist :) I can wait :*"
+
   utter_iamabot:
   - text: "Ich bin ein Chatbot, powered by Rasa."
 
@@ -117,6 +120,8 @@ responses:
 
   utter_KeinTestAlternative:
   - text: "Schade Marmelade :( Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! :3"
+
+
   
 
   utter_ThisIsLinkToPersonalityTest:

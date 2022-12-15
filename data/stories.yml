@@ -9,8 +9,11 @@ stories:
   - action: action_store_name
   - action: utter_fragemiterklaerung
 
-# - story: DontStart
-#   steps: 
+- story: DontStart
+  steps: 
+  - intent: no_start
+  - action: utter_schade_bye
+
 
 
 - story: askAboutPersonality
