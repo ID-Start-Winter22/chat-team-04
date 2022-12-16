@@ -110,7 +110,7 @@ responses:
         payload: "/no_start"
 
   utter_doYouKnowWebsite:
-  - text: "Kennst du den 16-Personalities Test und weißt du vielleicht deinen Typ? (...Ich bin INFJ falls es dich interessiert!!)"
+  - text: "Kennst du den 16-Personalities Test und weißt du vielleicht deinen Typ? (...Ich bin INFP falls es dich interessiert!!)"
     buttons: 
       - title: "Ja, kenn' ich."
         payload: "/yes_iKnow"

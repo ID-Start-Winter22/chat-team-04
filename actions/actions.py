@@ -233,5 +233,6 @@ class ActionStoreForm(Action):
         
         
         dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
+        dispatcher.utter_message("Meine Idee für dich wäre: \n 'Ein Fuchs, welcher in einem frostigen Wald eine magische Glaskugel findet'")
 
         return []
