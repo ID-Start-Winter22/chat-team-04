@@ -92,6 +92,7 @@ responses:
 
   utter_schade_bye:
   - text: "Uhh? Okay, dann nicht :O Komm zurück, wenn du bereit bist :) I can wait :*"
+    image: "https://i.pinimg.com/originals/15/23/b2/1523b244597e3137952d16a8c6e57f70.gif"
 
   utter_iamabot:
   - text: "Ich bin ein Chatbot, powered by Rasa."

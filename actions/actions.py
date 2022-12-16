@@ -86,7 +86,7 @@ class yourTypeIs(Action):
         if not personality_type :
             dispatcher.utter_message(" Du hast mir deine personality nicht genannt :(")
         elif personality_type == "INTJ":
-            dispatcher.utter_message('So so Du bist {}. Das ist toll'.format(personality_type))
+            dispatcher.utter_message('So so du bist also {}. Das ist supi.'.format(personality_type))
         elif personality_type == "INTP":
             dispatcher.utter_message("Du bist INTP")
         elif personality_type == "ENTJ":
@@ -120,7 +120,7 @@ class yourTypeIs(Action):
 
         
 
-        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser Matrose {}! Aber um dir die perfekte Idee zu liefern, muss ich dir noch unbedingt noch ein, zwei oder sogar drei Fragen stellen! Hmm.. lass überlegen....: An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
+        dispatcher.utter_message('Ich kenne dich jetzt schon ein bisschen besser Matrose {}! Aber um dir die perfekte Idee zu liefern, muss ich dir noch drei Fragen stellen! An welche Farbe denkst du, wenn du das Wort Kreativität hörst?'.format(username))
         
         return []
 
@@ -205,7 +205,7 @@ class ActionForm(Action):
 
      def run(self,dispatcher, tracker, domain):
         art_style = tracker.get_slot("art_style")
-        dispatcher.utter_message("Dein Lieblingsstil ist {}".format(art_style))
+        dispatcher.utter_message("Dein gewählter Stil ist {} hmm..außergewöhnlich...".format(art_style))
 
         # dispatcher.utter_message("Welchen Emoji würdest du zum texten nutzen?") # dialog ändern
 
