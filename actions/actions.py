@@ -281,7 +281,7 @@ class ActionPrompt(Action):
         elif personality_type == "INTP":
 
             randomZahl = random.randint(0,3) 
-            listePers = ["bog", "bag", "big", "bug"]
+            listePers = ["experimentiert.", "erforscht.", "entwickelt.", "feiert."]
             chosenPromptPersonality = listePers[randomZahl]
 
         elif personality_type == "ESFJ":
@@ -390,10 +390,10 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["bog", "bag", "big", "bug"]
+            listeForm = ["Ein Kreis, der", "Eine Uhr, die", "Ein Boot, das", "Ein Mönch, der"]
 
             chosenPromptForm = listeForm[randomZahl]
-
+            
         elif formen_choice == "Dreieck":
 
             randomZahl = random.randint(0,3) 
