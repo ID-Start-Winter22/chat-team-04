@@ -287,7 +287,7 @@ class ActionPrompt(Action):
         elif personality_type == "ESFJ":
 
             randomZahl = random.randint(0,3) 
-            listePers = ["bog", "bag", "big", "bug"]
+            listePers = ["spielt.", "beobachtet.", "sich unterhält.", "sich freut."]
             chosenPromptPersonality = listePers[randomZahl]
 
         # COLOR  
@@ -304,7 +304,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bog", "bag", "big", "bug"]
+            listeColor = ["auf einem Dach", "Am Meer bei Sonnenuntergang", "neben einem Papagei", "an einer Backsteinwand"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -313,7 +313,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bog", "bag", "big", "bug"]
+            listeColor = ["in einer Blumenwiese", "unter der Mittagssonne", "inmitten von Sonnenblumen", "am Kamin"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -321,7 +321,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bog", "bag", "big", "bug"]
+            listeColor = ["am Meer", "an der Küste", "an einem Teich", "unter klarem Sternenhimmel"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -329,7 +329,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bog", "bag", "big", "bug"]
+            listeColor = ["in einem Garten", "In einem Blumengeschäft", "umgeben von Rosen", "auf einer Wiese"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -353,7 +353,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bog", "bag", "big", "bug"]
+            listeColor = ["in einem dunklen Wald", "Unter einem Wolkenlosen Sternenhimmel", "in einem dunklen Gang", "in einem schwarzen Auto"]
 
             chosenPromptColor = listeColor[randomZahl]   
 
@@ -361,7 +361,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bog", "bag", "big", "bug"]
+            listeColor = ["auf einem schneebedecktem Berg", "in einer verschneiten Straße", "in den Alpen", "am Gipfelkreuz eines Berges"]
 
             chosenPromptColor = listeColor[randomZahl] 
 
@@ -374,7 +374,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["bog", "bag", "big", "bug"]
+            listeForm = ["Eine weiße Taube, die", "ein verliebter Frosch, der", "ein gerade geschlüpftes Küken, das", "ein schöner Schwan, der"]
 
             chosenPromptForm = listeForm[randomZahl]
 
@@ -398,7 +398,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["bog", "bag", "big", "bug"]
+            listeForm = ["ein Schiff, das", "eine Libelle, die", "ein Falter, der", "Verkehrsschild, das"]
 
             chosenPromptForm = listeForm[randomZahl]
         
@@ -427,7 +427,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["befreit", "lebhaft", "verspielt", "traditionell"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -435,7 +435,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["verspielt", "exotisch", "ungewöhnlich", "schön"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -462,7 +462,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["realistisch", "alltäglich", "gefühlvoll", "melancholisch"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -471,7 +471,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["friedlich", "im Einklang mit der Natur", "angenehm", "natürlich"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
