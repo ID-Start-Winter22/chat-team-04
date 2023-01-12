@@ -266,9 +266,9 @@ class ActionPrompt(Action):
     
 
         
-        # personalities 
+        # PERSONALITIES 
 
-        if personality_type == "INTJ":
+        if personality_type == "INFJ":
             """Funktion die Satzteil für passende Userantwort random auswählt"""
 
             randomZahl = random.randint(0,4) # hier nummer der prompts in liste einfügen - 1
@@ -284,8 +284,13 @@ class ActionPrompt(Action):
             listePers = ["bog", "bag", "big", "bug"]
             chosenPromptPersonality = listePers[randomZahl]
 
-    # color 
+        elif personality_type == "ESFJ":
 
+            randomZahl = random.randint(0,3) 
+            listePers = ["bog", "bag", "big", "bug"]
+            chosenPromptPersonality = listePers[randomZahl]
+
+        # COLOR  
 
         if color == "grün":
 
@@ -295,6 +300,88 @@ class ActionPrompt(Action):
 
             chosenPromptColor = listeColor[randomZahl]
 
+        elif color == "rot":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        elif color == "gelb":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        elif color == "blau":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        # FORMEN CHOICE 
+
+        if formen_choice == "Herz":
+
+            randomZahl = random.randint(0,3) 
+
+            listeForm = ["bog", "bag", "big", "bug"]
+
+            chosenPromptForm = listeForm[randomZahl]
+
+        elif formen_choice == "Blatt":
+
+            randomZahl = random.randint(0,3) 
+
+            listeForm = ["bog", "bag", "big", "bug"]
+
+            chosenPromptForm = listeForm[randomZahl]
+
+        elif formen_choice == "Kreis":
+
+            randomZahl = random.randint(0,3) 
+
+            listeForm = ["bog", "bag", "big", "bug"]
+
+            chosenPromptForm = listeForm[randomZahl]
+
+        elif formen_choice == "Dreieck":
+
+            randomZahl = random.randint(0,3) 
+
+            listeForm = ["bog", "bag", "big", "bug"]
+
+            chosenPromptForm = listeForm[randomZahl]
+        
+
+        # ART STYLE 
+
+        if art_style == "Barock":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+        elif art_style == "Surrealismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+
+
+
+        # zusammensetzen des gesamten prompts 
         wholePrompt = chosenPromptPersonality + chosenPromptPersonality
 
         dispatcher.utter_message(wholePrompt)
