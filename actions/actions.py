@@ -553,7 +553,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["wild", "revolutionär", "rebellisch", "bug"]
+            listeStyle = ["wild", "revolutionär", "rebellisch", "bunt"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
