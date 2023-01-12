@@ -324,7 +324,32 @@ class ActionPrompt(Action):
 
             chosenPromptColor = listeColor[randomZahl]
 
-        elif color == "rosa" or color == "fuchsia" or color == "altrosa":
+        elif color == "rosa" or color == "fuchsia" or color == "altrosa" or color == "pastellrosa":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        elif color == "pink" or color == "pastellpink":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        elif color == "lila" or color == "violett" or color == "purpur":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        
+
 
         # FORMEN CHOICE 
 
