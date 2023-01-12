@@ -71,9 +71,10 @@ class ActionStorePersonality(Action):
 class yourTypeIs(Action):
 
 
+
     ### Diese Action ruft den gespeicherten Slot personality_type auf
     ### und gibt je nach Slot Value verschiedene responses zurück 
-
+    
 
      def name(self):
          return "action_yourTypeIs"
@@ -232,7 +233,71 @@ class ActionStoreForm(Action):
         print("Sender ID: ", tracker.sender_id)
         
         
-        dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
-        dispatcher.utter_message("Meine Idee für dich wäre: \n 'Ein Fuchs, welcher in einem frostigen Wald eine magische Glaskugel findet'")
+        #dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
+        #dispatcher.utter_message("Meine Idee für dich wäre: \n 'Ein Fuchs, welcher in einem frostigen Wald eine magische Glaskugel findet'")
 
         return []
+
+class ActionPrompt(Action):
+
+    ### Die Action generiert einen Inspirationsprompt angepasst an die individuellen Entity-Slots
+
+
+    def name(self):
+        return "action_getPrompt"
+
+    def run(self, dispatcher, tracker, domain):
+        username = tracker.get_slot("username")
+        personality_type = tracker.get_slot("personality_type")
+        color = tracker.get_slot("color")
+        art_style = tracker.get_slot("art_style")
+        formen_choice = tracker.get_slot("formen_choice")
+        
+        
+        dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
+
+        # test entities (rausnehmen)
+        # personality_type = "INTJ"
+        # color = "grün"
+        # art_style = "Barock"
+        # formen_choice = "Herz"
+
+        # Listen für jede Kategorie und Unterkategorien als Wahl des Users = Prompts für Satz  => in jeweilige Schleife für Übersicht
+    
+
+        
+        # personalities 
+
+        if personality_type == "INTJ":
+            """Funktion die Satzteil für passende Userantwort random auswählt"""
+
+            randomZahl = random.randint(0,4) # hier nummer der prompts in liste einfügen - 1
+
+            listePers = ["lulu", "lala", "lili", "lolo", "lalu"]
+
+            # so für jede personality benennen 
+            chosenPromptPersonality = listePers[randomZahl]
+
+        elif personality_type == "INTP":
+
+            randomZahl = random.randint(0,3) 
+            listePers = ["bog", "bag", "big", "bug"]
+            chosenPromptPersonality = listePers[randomZahl]
+
+    # color 
+
+
+        if color == "grün":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]
+
+        wholePrompt = chosenPromptPersonality + chosenPromptPersonality
+
+        dispatcher.utter_message(wholePrompt)
+
+        return []
+

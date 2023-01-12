@@ -42,6 +42,7 @@ stories:
   - action: utter_buttonsFormen
   - intent: my_form_is
   - action: action_store_formen
+  - action: action_getPrompt
 
 
 - story: iDontKnowPersonalityAndQuestions
@@ -62,13 +63,14 @@ stories:
   - action: utter_buttonsFormen
   - intent: my_form_is
   - action: action_store_formen
+  - action: action_getPrompt 
 
 
 - story: IdontWantToDoTest
   steps:
   - intent: kein_Test
   - action: utter_KeinTestAlternative
-  # hier noch restliche Fragen hin 
+  # hier eigentlich alternativer weg ohne entity personality_type # low priority
 
 
  

@@ -30,6 +30,7 @@ actions:
   - action_store_Style
   - action_this_is_your_style_and_question_three
   - action_store_formen # to do, this is your form hier auch  
+  - action_getPrompt
 
 
 entities:
@@ -141,7 +142,7 @@ responses:
         payload: "Dreieck"
       - title: "Blatt"
         payload: "Blatt"
-      - title: "Herz"
+      - title: "🌑"
         payload: "Herz"
 
   

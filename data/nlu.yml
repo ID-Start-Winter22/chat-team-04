@@ -135,7 +135,7 @@ nlu:
 
 - intent: my_form_is
   examples: |
-    - [&#x1F981](formen_choice)
+    - [Herz](formen_choice)
     - [Blatt](formen_choice)
     - [Kreis](formen_choice)
     - [Dreieck](formen_choice)
