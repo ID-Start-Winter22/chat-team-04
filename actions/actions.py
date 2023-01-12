@@ -292,7 +292,7 @@ class ActionPrompt(Action):
 
         # COLOR  
 
-        if color == "grün":
+        if color == "Grün" or color == "Hellgrün" or color == "Dunkelgrün" or color == "Limette" or color == "Tannengrün" or color== "Grasgrün" or color=="Pastellgrün":
 
             randomZahl = random.randint(0,3) 
 
@@ -308,7 +308,8 @@ class ActionPrompt(Action):
 
             chosenPromptColor = listeColor[randomZahl]
 
-        elif color == "gelb":
+
+        elif color == "gelb" or color=="Hellgelb" or color=="Pastellgelb":
 
             randomZahl = random.randint(0,3) 
 
@@ -347,6 +348,22 @@ class ActionPrompt(Action):
             listeColor = ["bog", "bag", "big", "bug"]
 
             chosenPromptColor = listeColor[randomZahl]
+
+        elif color == "schwarz":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl]   
+
+        elif color == "weiß":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["bog", "bag", "big", "bug"]
+
+            chosenPromptColor = listeColor[randomZahl] 
 
         
 
