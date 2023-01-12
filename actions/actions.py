@@ -393,7 +393,7 @@ class ActionPrompt(Action):
             listeForm = ["Ein Kreis, der", "Eine Uhr, die", "Ein Boot, das", "Ein Mönch, der"]
 
             chosenPromptForm = listeForm[randomZahl]
-            
+
         elif formen_choice == "Dreieck":
 
             randomZahl = random.randint(0,3) 
@@ -406,11 +406,12 @@ class ActionPrompt(Action):
         # ART STYLE 
 
              
+         
         if art_style == "Romantik":
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["altertümlich", "unterbewusst", "präzise", "verträumt"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -451,7 +452,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["echt", "unsichtbar", "nur", "ungeschönt"]
 
             chosenPromptStyle = listeStyle[randomZahl]
         
@@ -479,7 +480,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["wütend", "anti-materialistisch", "sinnbildlich", "traumähnlich"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -488,7 +489,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["natursüchtig", "schöpferisch", "harmonisch", "idyllisch"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -502,15 +503,13 @@ class ActionPrompt(Action):
             chosenPromptStyle = listeStyle[randomZahl]
 
 
-
         elif art_style == "Kubismus":
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["blass", "wenig", "verteilt", "unverfälscht"]
 
             chosenPromptStyle = listeStyle[randomZahl]
-
 
         elif art_style == "Dadaismus":
 
@@ -530,11 +529,12 @@ class ActionPrompt(Action):
             chosenPromptStyle = listeStyle[randomZahl]
 
 
+
         elif art_style == "Surrealismus":
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["verträumt", "unterbewusst", "automatisch", "fremdgesteuert"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -553,7 +553,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["bog", "bag", "big", "bug"]
+            listeStyle = ["wild", "revolutionär", "rebellisch", "bug"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -561,7 +561,7 @@ class ActionPrompt(Action):
 
 
         # zusammensetzen des gesamten prompts 
-        wholePrompt = chosenPromptPersonality + chosenPromptPersonality
+        wholePrompt = chosenPromptForm + " " + chosenPromptColor + " " + chosenPromptStyle + " " + chosenPromptPersonality
 
         dispatcher.utter_message(wholePrompt)
 
