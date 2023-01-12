@@ -156,13 +156,13 @@ class ActionThisIsYourColorAndStyle(Action):
         else:
             dispatcher.utter_message('Deine ausgewählte Farbe ist {}! Gute Wahl! .. Obwohl ich selber wohl pink wählen würde..'.format(color))
         
-        listStile = ["Romantik", "Gotik", "Renaissance","Manierismus","Barock", \
-                     "Rokoko","Klassizismus","Romantik","Realismus","PräRaffaelismus",
-                     "Impressionismus","Naturalismus","Post-Impressionismus","Symbolismus",
-                     "Jugendstil","Expressionismus","Kubismus","Futurismus","Dadaismus",
-                     "Präzisionismus","Art Deco","Bauhaus","Surrealismus","Neue Sachlichkeit",
-                     "Abstrakter Expressionismus","Pop-Art","Hyperrealismus",
-                     "Neo-expressionismus","Graffiti","Suprematismus"]
+        listStile = ["Romantik", "Gotik", "Renaissance",
+                     "Rokoko", "Klassizismus", "Realismus",
+                     "Impressionismus","Naturalismus", "Symbolismus",
+                     "Jugendstil","Expressionismus","Kubismus", "Dadaismus",
+                     "Bauhaus", "Surrealismus",
+                     "Pop-Art",
+                     "Graffiti"]
 
         myList = random.sample(listStile, 3)
         styleOne, styleTwo, styleThree = myList
