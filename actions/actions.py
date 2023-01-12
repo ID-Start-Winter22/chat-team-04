@@ -405,13 +405,130 @@ class ActionPrompt(Action):
 
         # ART STYLE 
 
-        if art_style == "Barock":
+             
+        if art_style == "Romantik":
 
             randomZahl = random.randint(0,3) 
 
             listeStyle = ["bog", "bag", "big", "bug"]
 
             chosenPromptStyle = listeStyle[randomZahl]
+
+        elif art_style == "Gotik":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+        elif art_style == "Renaissance":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+        elif art_style == "Rokoko":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+        elif art_style == "Klassizismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Realismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+        
+
+
+        elif art_style == "Impressionismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Naturalismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Symbolismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Jugendstil":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Expressionismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+
+        elif art_style == "Kubismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Dadaismus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+        elif art_style == "Bauhaus":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
 
         elif art_style == "Surrealismus":
 
@@ -421,6 +538,24 @@ class ActionPrompt(Action):
 
             chosenPromptStyle = listeStyle[randomZahl]
 
+
+        elif art_style == "Pop-Art":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
+
+
+
+        elif art_style == "Graffiti":
+
+            randomZahl = random.randint(0,3) 
+
+            listeStyle = ["bog", "bag", "big", "bug"]
+
+            chosenPromptStyle = listeStyle[randomZahl]
 
 
 
