@@ -136,13 +136,13 @@ responses:
   utter_buttonsFormen:
   - text: "Welchen Emoji würdest du zum texten nutzen?"
     buttons: 
-      - title: "Kreis"
+      - title: "🔵"
         payload: "Kreis"
-      - title: "Dreieck"
+      - title: "📐"
         payload: "Dreieck"
-      - title: "Blatt"
+      - title: "🌿"
         payload: "Blatt"
-      - title: "🌑"
+      - title: "💛"
         payload: "Herz"
 
   
