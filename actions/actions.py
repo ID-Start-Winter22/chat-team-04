@@ -277,7 +277,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,4) # hier nummer der prompts in liste einfügen - 1
 
-            listePers = ["philosophiert.", "entspannt.", "in die Sterne schaut.", "nachdenkt.", "liest."]
+            listePers = ["über den Sinn des Lebens philosophiert.", "entspannt.", "in die Sterne schaut.", "über Liebe nachdenkt.", "einen Comic liest."]
 
             # so für jede personality benennen 
             chosenPromptPersonality = listePers[randomZahl]
@@ -285,13 +285,13 @@ class ActionPrompt(Action):
         elif personality_type == "INTP":
 
             randomZahl = random.randint(0,3) 
-            listePers = ["experimentiert.", "erforscht.", "entwickelt.", "feiert."]
+            listePers = ["mit genmutiertem Mais experimentiert.", "die Antarktis erforscht.", "einen Chatbot entwickelt.", "sich selbst feiert."]
             chosenPromptPersonality = listePers[randomZahl]
 
         elif personality_type == "ESFJ":
 
             randomZahl = random.randint(0,3) 
-            listePers = ["spielt.", "beobachtet.", "sich unterhält.", "sich freut."]
+            listePers = ["Mensch-ärgere-dich-nicht spielt.", "Menschen beobachtet.", "sich unterhält.", "sich freut."]
             chosenPromptPersonality = listePers[randomZahl]
 
         # COLOR  
@@ -308,7 +308,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["auf einem Dach", "Am Meer bei Sonnenuntergang", "neben einem Papagei", "an einer Backsteinwand"]
+            listeColor = ["auf einem Dach", "am Meer bei Sonnenuntergang", "neben einem Papagei", "an einer Backsteinwand"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -325,7 +325,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["am Meer", "an der Küste", "an einem Teich", "unter klarem Sternenhimmel"]
+            listeColor = ["am tobenden Meer", "an der Küste", "an einem verwilderten Teich", "unter klarem Sternenhimmel"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -333,7 +333,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["in einem Garten", "In einem Blumengeschäft", "umgeben von Rosen", "auf einer Wiese"]
+            listeColor = ["in einem zugemüllten Garten", "in einem insolventen Blumengeschäft", "umgeben von verwelkten Rosen", "auf einer Hüpfburg"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -341,7 +341,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["bei Barbie und Ken", "auf einer Tulpenwiese", "in einem Smarties Pool", "umgeben von einem vibrant Sonnenuntergang"]
+            listeColor = ["bei Barbie und Ken", "auf einer Tulpenwiese", "in einem Smarties Pool", "umgeben von einem knalligen Sonnenuntergang"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -349,7 +349,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["auf einer Blumenwiese", "umgeben von Schmetterlingen", "auf Höhe des Matterhorns", "auf einem Trampolin"]
+            listeColor = ["auf einem verlassenen Flughafen", "umgeben von bösen Schmetterlingen", "auf Höhe des Matterhorns", "auf einem Trampolin"]
 
             chosenPromptColor = listeColor[randomZahl]
 
@@ -357,7 +357,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["in einem dunklen Wald", "Unter einem Wolkenlosen Sternenhimmel", "in einem dunklen Gang", "in einem schwarzen Auto"]
+            listeColor = ["in einem dunklen Wald", "Unter einem Wolkenlosen Sternenhimmel", "in einem dunklen Gang", "in einer Trauerweide"]
 
             chosenPromptColor = listeColor[randomZahl]   
 
@@ -365,7 +365,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["auf einem schneebedecktem Berg", "in einer verschneiten Straße", "in den Alpen", "am Gipfelkreuz eines Berges"]
+            listeColor = ["auf einem schneebedeckten Berg", "in einer verschneiten Straße", "in einem Mondkrater", "am Gipfelkreuz eines Berges"]
 
             chosenPromptColor = listeColor[randomZahl] 
 
@@ -400,9 +400,9 @@ class ActionPrompt(Action):
 
         elif formen_choice == "Dreieck":
 
-            randomZahl = random.randint(0,3) 
+            randomZahl = random.randint(0,4) 
 
-            listeForm = ["Ein Schiff, das", "Eine Libelle, die", "Ein Falter, der", "Ein Verkehrsschild, das"]
+            listeForm = ["Ein fliegendes Schiff, das", "Eine schnelle Libelle, die", "Ein lebender Tortilla Chip, der", "Ein kaputtes Verkehrsschild, das", "Ein wabbeliger Kugelfisch, der"]
 
             chosenPromptForm = listeForm[randomZahl]
         
