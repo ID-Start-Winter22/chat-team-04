@@ -89,20 +89,20 @@ responses:
   - text: "Toll weiter so."
 
   utter_goodbye:
-  - text: "Tschüss! Danke dass du da warst, ich werd' dich vermissen <3"
+  - text: "Tschüss! Danke dass du da warst, ich werd' dich vermissen 😽"
 
   utter_schade_bye:
   - text: "Uhh? Okay, dann nicht :O Komm zurück, wenn du bereit bist :) I can wait :*"
     image: "https://i.pinimg.com/originals/15/23/b2/1523b244597e3137952d16a8c6e57f70.gif"
 
   utter_iamabot:
-  - text: "Ich bin ein Chatbot, powered by Rasa."
+  - text: "Ich bin Paige...hallo? Ich hab mich doch schon vorgestellt. 🤡"
 
   utter_greet_ask_name:
-  - text: "Ahoi Matrose, verrätst du mir deinen Namen? :)"
+  - text: "Ahoi Matrose, verrätst du mir deinen Namen? 😌"
 
   utter_fragemiterklaerung:
-  - text: "Hi {username}!  Ich bin Paige und ich liefere dir Inspo. Aber erst will ich dir ein paar Fragen stellen ;) Möchtest
+  - text: "Hi {username}!  Ich bin Paige und ich liefere dir Inspo 👩‍🎨. Aber erst will ich dir ein paar Fragen stellen 😏 Möchtest
  du loslegen?"
     buttons: 
       - title: "Ja"
@@ -111,7 +111,7 @@ responses:
         payload: "/no_start"
 
   utter_doYouKnowWebsite:
-  - text: "Kennst du den 16-Personalities Test und weißt du vielleicht deinen Typ? (...Ich bin INFP falls es dich interessiert!!)"
+  - text: "Kennst du den 16-Personalities Test und weißt du vielleicht deinen Typ? (...Ich bin INFP falls es dich interessiert! )"
     buttons: 
       - title: "Ja, kenn' ich."
         payload: "/yes_iKnow"
@@ -119,11 +119,11 @@ responses:
         payload: "/no_iDont"
 
   utter_whatsYourType:
-  - text: "Was ist denn dein Persönlichkeitstyp? :)"
+  - text: "Was ist denn dein Persönlichkeitstyp? 🤷‍♀️"
     image: "https://i.pinimg.com/564x/87/af/be/87afbe7eb3fc6c27b68f623323435832.jpg"
 
   utter_ThisIsPersonalityTest:
-  - text: "Hmm? Haste bock den Test nun zu machen? :)"
+  - text: "Hmm? Haste bock den Test nun zu machen? 🤷‍♀️"
     buttons: 
       - title: "Ja, gerne!"
         payload: "/Test_Machen"
@@ -136,21 +136,21 @@ responses:
   utter_buttonsFormen:
   - text: "Welchen Emoji würdest du zum texten nutzen?"
     buttons: 
-      - title: "🔵"
+      - title: "⚫️"
         payload: "Kreis"
       - title: "📐"
         payload: "Dreieck"
       - title: "🌿"
         payload: "Blatt"
-      - title: "💛"
+      - title: "🖤"
         payload: "Herz"
 
   
 
   utter_ThisIsLinkToPersonalityTest:
   - text: "Okay hier der Link, frisch aus dem Ofen: https://www.16personalities.com/ 
-Und welcher Typ ist bei dir rausgekommen? ;-)"
-   # das hier als custom action machen mit time reminder nach gewisser minuten anzahl?
+Und welcher Typ ist bei dir rausgekommen? 🤔"
+
   
   utter_OkayNoTest:
   - text: "Okay, dann ohne Test! Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! "

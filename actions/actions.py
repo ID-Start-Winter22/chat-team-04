@@ -85,17 +85,17 @@ class yourTypeIs(Action):
         personality_type = personality_type[:4]
 
         if not personality_type :
-            dispatcher.utter_message(" Du hast mir deine personality nicht genannt :(")
+            dispatcher.utter_message(" Du hast mir deine personality nicht genannt 😥")
         elif personality_type == "INTJ":
             dispatcher.utter_message('So so du bist also {}. Das ist supi.'.format(personality_type))
         elif personality_type == "INTP":
-            dispatcher.utter_message("Du bist INTP")
+            dispatcher.utter_message("Du bist also INTP. Neugierig wa? 😏")
         elif personality_type == "ENTJ":
             dispatcher.utter_message("Du bist ENTJ")
         elif personality_type == "ENTP":
             dispatcher.utter_message("Du bist ENTP")
         elif personality_type == "INFJ":
-            dispatcher.utter_message("Du bist INFJ")
+            dispatcher.utter_message("Du bist INFJ. Soso das klingt krass mystisch! 🧙‍♂️")
         elif personality_type == "INFP":
             dispatcher.utter_message("Du bist INFP")
         elif personality_type == "ENFJ":
@@ -109,7 +109,7 @@ class yourTypeIs(Action):
         elif personality_type == "ESTJ":
             dispatcher.utter_message("Du bist ESTJ")
         elif personality_type == "ESFJ":
-            dispatcher.utter_message("Du bist ESFJ")
+            dispatcher.utter_message("Du bist ESFJ. Du kleiner social butterfly du. 🥰")
         elif personality_type == "ISTP":
             dispatcher.utter_message("Du bist ISTP")
         elif personality_type == "ISFP":
@@ -374,7 +374,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["Eine weiße Taube, die", "ein verliebter Frosch, der", "ein gerade geschlüpftes Küken, das", "ein schöner Schwan, der"]
+            listeForm = ["Eine weiße Taube, die", "Ein verliebter Frosch, der", "Ein gerade geschlüpftes Küken, das", "Ein schöner Schwan, der"]
 
             chosenPromptForm = listeForm[randomZahl]
 
@@ -390,7 +390,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["Ein Kreis, der", "Eine Uhr, die", "Ein Boot, das", "Ein Mönch, der"]
+            listeForm = ["Ein exotischer Planet, der", "Eine lebende Uhr, die", "Ein untergegangenes Boot, das", "Ein meditierender Mönch, der"]
 
             chosenPromptForm = listeForm[randomZahl]
 
@@ -398,7 +398,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["ein Schiff, das", "eine Libelle, die", "ein Falter, der", "Verkehrsschild, das"]
+            listeForm = ["Ein Schiff, das", "Eine Libelle, die", "Ein Falter, der", "Ein Verkehrsschild, das"]
 
             chosenPromptForm = listeForm[randomZahl]
         
@@ -561,7 +561,7 @@ class ActionPrompt(Action):
 
 
         # zusammensetzen des gesamten prompts 
-        wholePrompt = chosenPromptForm + " " + chosenPromptColor + " " + chosenPromptStyle + " " + chosenPromptPersonality
+        wholePrompt = "Deine personalisierte Idee ist: \n" + chosenPromptForm + " " + chosenPromptColor + " " + chosenPromptStyle + " " + chosenPromptPersonality
 
         dispatcher.utter_message(wholePrompt)
 
