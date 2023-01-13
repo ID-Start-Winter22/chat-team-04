@@ -253,7 +253,11 @@ class ActionPrompt(Action):
         art_style = tracker.get_slot("art_style")
         formen_choice = tracker.get_slot("formen_choice")
         
-        
+        chosenPromptPersonality = ""
+        chosenPromptColor = ""
+        chosenPromptForm = ""
+        chosenPromptStyle = ""
+
         dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
 
         # test entities (rausnehmen)
