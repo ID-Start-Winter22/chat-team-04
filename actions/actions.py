@@ -347,9 +347,25 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeColor = ["in einem dunklen Wald", "Unter einem Wolkenlosen Sternenhimmel", "in einem dunklen Gang", "in einer Trauerweide"]
+            listeColor = ["in einem dunklen Wald", "unter einem Wolkenlosen Sternenhimmel", "in einem dunklen Gang", "in einer Trauerweide"]
 
             chosenPromptColor = listeColor[randomZahl]   
+
+        elif color == "grau":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["in einem düsteren Tunnel", "auf einer verlassenen Autobahn", "in einem U-Bahn Schacht", "in einem heruntergekommenen Plattenbau"]
+
+            chosenPromptColor = listeColor[randomZahl] 
+
+        elif color == "orange":
+
+            randomZahl = random.randint(0,3) 
+
+            listeColor = ["auf einer verlassenen Orangenplantage", "auf einem belebten Basketballfeld", "auf dem Kopf von Ron Weasley", "an einem Strand voller Bernstein"]
+
+            chosenPromptColor = listeColor[randomZahl] 
 
         elif color == "weiß":
 
@@ -405,7 +421,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["altertümlich", "unterbewusst", "präzise", "verträumt"]
+            listeStyle = ["schmachtend", "unterbewusst", "verliebt", "verträumt"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -413,7 +429,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["ängstlich", "verkünstelt", "aufwendig", "dunkel"]
+            listeStyle = ["ängstlich", "schwungvoll", "imposant", "düster"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -421,7 +437,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["befreit", "lebhaft", "verspielt", "traditionell"]
+            listeStyle = ["befreit", "lebhaft", "verspielt", "wie eine griechische Gottheit"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
@@ -429,7 +445,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeStyle = ["verspielt", "exotisch", "ungewöhnlich", "schön"]
+            listeStyle = ["verspielt", "extravagant", "ungewöhnlich", "auffällig"]
 
             chosenPromptStyle = listeStyle[randomZahl]
 
