@@ -82,6 +82,7 @@ class yourTypeIs(Action):
      def run(self, dispatcher, tracker, domain):
         username = tracker.get_slot("username")
         personality_type = tracker.get_slot("personality_type")
+        personality_type = personality_type.upper()
         personality_type = personality_type[:4]
 
         if not personality_type :
@@ -249,6 +250,7 @@ class ActionPrompt(Action):
     def run(self, dispatcher, tracker, domain):
         username = tracker.get_slot("username")
         personality_type = tracker.get_slot("personality_type")
+        personality_type = personality_type.upper()
         color = tracker.get_slot("color")
         art_style = tracker.get_slot("art_style")
         formen_choice = tracker.get_slot("formen_choice")
@@ -293,6 +295,8 @@ class ActionPrompt(Action):
             randomZahl = random.randint(0,3) 
             listePers = ["Mensch-ärgere-dich-nicht spielt.", "Menschen beobachtet.", "sich unterhält.", "sich freut."]
             chosenPromptPersonality = listePers[randomZahl]
+
+       
 
         # COLOR  
 
@@ -561,6 +565,7 @@ class ActionPrompt(Action):
 
             chosenPromptStyle = listeStyle[randomZahl]
 
+        
 
 
 
