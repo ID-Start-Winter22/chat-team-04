@@ -30,6 +30,21 @@ stories:
   - action: action_yourTypeIs # hier button, "ist das richtig? um intent zu triggern und fragen zu beginnen"
 
 
+# - story: StartQuestions
+#   steps: 
+#   - action: action_yourTypeIs
+#   - intent: Question_eins_color
+#   - action: action_store_color
+#   - action: action_this_is_your_color_and_question_two 
+#   - intent: styleOne
+#   - action: action_store_Style
+#   - action: action_this_is_your_style_and_question_three
+#   - action: utter_buttonsFormen
+#   - intent: my_form_is
+#   - action: action_store_formen
+#   - action: action_getPrompt
+
+  
 - story: StartQuestions
   steps: 
   - action: action_yourTypeIs
@@ -40,7 +55,28 @@ stories:
   - action: action_store_Style
   - action: action_this_is_your_style_and_question_three
   - action: utter_buttonsFormen
-  - intent: my_form_is
+
+- story: BlattChoice
+  steps: 
+  - intent: blatt
+  - action: action_store_formen
+  - action: action_getPrompt
+
+- story: KreisChoice
+  steps: 
+  - intent: kreis
+  - action: action_store_formen
+  - action: action_getPrompt
+
+- story: DreieckChoice
+  steps: 
+  - intent: dreieck
+  - action: action_store_formen
+  - action: action_getPrompt
+
+- story: HerzChoice
+  steps: 
+  - intent: herz
   - action: action_store_formen
   - action: action_getPrompt
 
@@ -61,9 +97,11 @@ stories:
   - action: action_store_Style # hier style gespeichert 
   - action: action_this_is_your_style_and_question_three
   - action: utter_buttonsFormen
-  - intent: my_form_is
+  - intent: blatt
   - action: action_store_formen
   - action: action_getPrompt 
+
+
 
 
 - story: IdontWantToDoTest

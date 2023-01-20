@@ -207,18 +207,9 @@ class ActionForm(Action):
 
      def run(self,dispatcher, tracker, domain):
         art_style = tracker.get_slot("art_style")
-        dispatcher.utter_message("Dein gewählter Stil ist {} hmm..außergewöhnlich...".format(art_style))
+        dispatcher.utter_message("Dein gewählter Stil ist {}. Hmm..außergewöhnlich...🪁".format(art_style))
 
-        # dispatcher.utter_message("Welchen Emoji würdest du zum texten nutzen?") # dialog ändern
-
-        # buttons = []
-
-        # buttons.append({"title": "blatt" , "payload": "Blatt"})
-        # buttons.append({"title": "kreis", "payload": "Kreis"})
-        # buttons.append({"title": "dreieck", "payload": "Dreieck"})
-        # buttons.append({"title": "herz", "payload": "Herz"})
-
-        # dispatcher.utter_message(buttons=buttons)
+        
 
         return []
 
@@ -234,20 +225,21 @@ class ActionStoreForm(Action):
         print("Sender ID: ", tracker.sender_id)
         
         
-        #dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
-        #dispatcher.utter_message("Meine Idee für dich wäre: \n 'Ein Fuchs, welcher in einem frostigen Wald eine magische Glaskugel findet'")
-
+        
         return []
 
 class ActionPrompt(Action):
 
-    ### Die Action generiert einen Inspirationsprompt angepasst an die individuellen Entity-Slots
+        ## Diese Action extrahiert alle bisher gespeicherten Entity Slot-Values
+        ## und gibt auf dessen Basis einen personalisierten Persönlichkeitsprompt aus 
 
 
     def name(self):
         return "action_getPrompt"
 
     def run(self, dispatcher, tracker, domain):
+
+
         username = tracker.get_slot("username")
         personality_type = tracker.get_slot("personality_type")
         personality_type = personality_type.upper()
@@ -260,16 +252,8 @@ class ActionPrompt(Action):
         chosenPromptForm = ""
         chosenPromptStyle = ""
 
-        dispatcher.utter_message("Dein gewählter Emoji ist ein {}".format(formen_choice))
+        dispatcher.utter_message("Deine Form ist ein {}. Cheers Matrose!".format(formen_choice))
 
-        # test entities (rausnehmen)
-        # personality_type = "INTJ"
-        # color = "grün"
-        # art_style = "Barock"
-        # formen_choice = "Herz"
-
-        # Listen für jede Kategorie und Unterkategorien als Wahl des Users = Prompts für Satz  => in jeweilige Schleife für Übersicht
-    
 
         
         # PERSONALITIES 
@@ -286,8 +270,8 @@ class ActionPrompt(Action):
 
         elif personality_type == "INTP":
 
-            randomZahl = random.randint(0,3) 
-            listePers = ["mit genmutiertem Mais experimentiert.", "die Antarktis erforscht.", "einen Chatbot entwickelt.", "sich selbst feiert."]
+            randomZahl = random.randint(0,4) 
+            listePers = ["mit genmutiertem Mais experimentiert.", "die Antarktis erforscht.", "einen Chatbot entwickelt.", "sich selbst feiert.", "ein Rückwärtssalto versucht."]
             chosenPromptPersonality = listePers[randomZahl]
 
         elif personality_type == "ESFJ":

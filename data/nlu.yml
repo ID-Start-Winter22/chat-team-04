@@ -120,19 +120,35 @@ nlu:
     - Ich denke an [Grün](color)
 
 
-- intent: my_form_is
+# - intent: my_form_is
+#   examples: |
+#     - [Herz](formen_choice)
+#     - [Blatt](formen_choice)
+#     - [Kreis](formen_choice)
+#     - [Dreieck](formen_choice)
+#     - [Herz](formen_choice)
+#     - [Viereck](formen_choice)
+#     - [Baum](formen_choice)
+#     - [Tier](formen_choice)
+#     - [Moebel](formen_choice)
+#     - [Licht](formen_choice)
+#     - [Universum](formen_choice)
+
+- intent: kreis 
+  examples: |
+    - [Kreis](formen_choice)
+
+- intent: blatt 
+  examples: |
+    - [Blatt](formen_choice)
+
+- intent: herz
   examples: |
     - [Herz](formen_choice)
-    - [Blatt](formen_choice)
-    - [Kreis](formen_choice)
+
+- intent: dreieck
+  examples: |
     - [Dreieck](formen_choice)
-    - [Herz](formen_choice)
-    - [Viereck](formen_choice)
-    - [Baum](formen_choice)
-    - [Tier](formen_choice)
-    - [Moebel](formen_choice)
-    - [Licht](formen_choice)
-    - [Universum](formen_choice)
 
 - intent: greet
   examples: |

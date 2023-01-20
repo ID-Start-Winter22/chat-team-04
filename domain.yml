@@ -17,7 +17,10 @@ intents:
   - Test_Machen
   - Question_eins_color
   - styleOne
-  - my_form_is
+  - kreis 
+  - blatt 
+  - herz
+  - dreieck
   
 
 actions:
@@ -29,7 +32,7 @@ actions:
   - action_this_is_your_color_and_question_two
   - action_store_Style
   - action_this_is_your_style_and_question_three
-  - action_store_formen # to do, this is your form hier auch  
+  - action_store_formen  
   - action_getPrompt
 
 
@@ -134,11 +137,11 @@ responses:
   - text: "Schade Marmelade :( Du willst wohl direkt zu den spicy Fragen? No problemo, los gehts!! :3"
 
   utter_buttonsFormen:
-  - text: "Welchen Emoji würdest du zum texten nutzen?"
+  - text: "Welche Form würdest du wählen?"
     buttons: 
-      - title: "⚫️"
+      - title: "⚪️"
         payload: "Kreis"
-      - title: "📐"
+      - title: "🔼"
         payload: "Dreieck"
       - title: "🌿"
         payload: "Blatt"
