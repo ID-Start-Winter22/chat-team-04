@@ -1,5 +1,5 @@
 :root{
-    --pink: #ED1E79;
+    --pink: #C393A9;
     --rosa: #FFCCE2;
     --petrol: #002A36;
 
@@ -14,7 +14,7 @@ button.css-1yzw4ak svg path{
 }
 
 body{
-    background-color: var(--rosa);
+    background-color: var(--petrol);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -56,30 +56,50 @@ html, body{
 
 .Infofeld div{
     width: 100%;
-    position: absolute;
     top: 20%
+}
+
+.Infofeld img{
+    height: 78vh;
 }
 
 h2{
     font-family: "Tw Cen MT";
-    margin-right: 25px;
-    margin-left: 25px;
     margin-top: 0px;
     font-size: 30px;
-    color: var(--rosa);
     
 }
 p.Einleitungstext{
     font-family: "Malgun Gothic";
-    font-size: 23px;
+    font-size: 20px;
     text-align:left;
-    color: var(--rosa);
     line-height: 1.5;
-    margin: 25px;
+
+}
+
+.Infofeld div{
+    color: var(--petrol);
+    padding: 90px;
+    width: 50%;
+    margin: 25px 0 0 60px;
+    
+}
+
+.Infofeld{
+    background-image: url(Pictures/Fleck.svg);
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 20px;
+}
+
+#rasa-chat-widget-container{
+    max-height: 90%;
 }
 
 img.Lasschatten{
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     height: 65px;
     right: 90px;
@@ -96,73 +116,24 @@ button.css-1pilyp0, button.css-uhdhks{
     background-position: center center ;
 }
 
-div.Pinnwand{
-    height: 40%;
-    width: 55%;
-    background-color: var(--petrol);
-    margin: 40px ;
-    position: relative;
-    border-radius: 20px;
+@media (max-width: 1000px) {
+    p.Einleitungstext{
+        font-size: 16px;
+    }
+
+    .Infofeld div{
+        color: var(--rosa);
+        margin: 25px;
+        padding: 0;
+        width: 75%;
+    }
+
+    .Infofeld{
+        background-image: none;
+    }
+
+    div.Pinnwand{
+        max-width: 100%;
+        min-width: 70%;
+    }
 }
-
-div.DallE{
-    flex: auto;
-}
-
-div.DallE img{
-    max-width: 20%;
-}
-
-div.DallE p{
-    position: absolute;
-    font-family: "Malgun Gothic";
-    font-weight: bold;
-    font-size: 10%;
-    top: 0;
-    visibility: hidden;
-    width: 85%;
-    height: 95%;
-    padding: 20px;
-    margin: 0;
-}
-
-div.DallE:hover p{
-    visibility: visible;
-    font-size: 12px;
-
-}
-
-/* div#DallE1{
-    width: 15%;
-    top: 350px;
-    left: 80px;
-    z-index: 4;
-}
-
-div#DallE2{
-    width: 15%;
-    top: 350px;
-    right: -100px;
-    z-index: 2;
-}
-
-div#Blumen{
-    width: 15%;
-    top: 350px;
-    left: 120px;
-    z-index: 5;
-}
-
-div#Sonne{
-    width: 15%;
-    top: 350px;
-    left: 640px;
-    z-index: 3;
-}
-
-div#Welle{
-    width: 15%;
-    top: 350px;
-    left: 365px;
-    z-index: 1; 
-} */
