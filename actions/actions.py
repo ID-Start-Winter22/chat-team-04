@@ -386,7 +386,7 @@ class ActionPrompt(Action):
 
             randomZahl = random.randint(0,3) 
 
-            listeForm = ["Ein süßer Fuchs, der", "Ein wilder Wolf, der", "Eine kleine Kuh, die", "Ein riesiger Schwarm Gänse, die"]
+            listeForm = ["Ein süßer Fuchs, der", "Ein wilder Wolf, der", "Eine kleine Kuh, die", "Ein riesiger Schwarm Gänse, der"]
 
             chosenPromptForm = listeForm[randomZahl]
 
