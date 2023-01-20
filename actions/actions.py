@@ -44,7 +44,7 @@ class ActionUserName(Action):
         if not username :
             dispatcher.utter_message(" Du hast mir Deinen Namen nicht gesagt.")
         else:
-            dispatcher.utter_message(' Du bist {}'.format(username))
+            dispatcher.utter_message('Du bist {}!'.format(username))
 
         return []
 
@@ -92,33 +92,33 @@ class yourTypeIs(Action):
         elif personality_type == "INTP":
             dispatcher.utter_message("Du bist also INTP. Neugierig wa? 😏")
         elif personality_type == "ENTJ":
-            dispatcher.utter_message("Du bist ENTJ")
+            dispatcher.utter_message("Du bist ENTJ. Klassiker.")
         elif personality_type == "ENTP":
-            dispatcher.utter_message("Du bist ENTP")
+            dispatcher.utter_message("Du bist ENTP. Spannend!")
         elif personality_type == "INFJ":
             dispatcher.utter_message("Du bist INFJ. Soso das klingt krass mystisch! 🧙‍♂️")
         elif personality_type == "INFP":
-            dispatcher.utter_message("Du bist INFP")
+            dispatcher.utter_message("Du bist INFP.. mmh..cool!")
         elif personality_type == "ENFJ":
-            dispatcher.utter_message("Du bist ENFJ")
+            dispatcher.utter_message("Du bist ENFJ. Charismatisch ;)")
         elif personality_type == "ENFP":
-            dispatcher.utter_message("Du bist ENFP")
+            dispatcher.utter_message("Du bist ENFP! WOw!")
         elif personality_type == "ISTJ":
-            dispatcher.utter_message("Du bist ISTJ")
+            dispatcher.utter_message("Du bist ISTJ. Lovely!")
         elif personality_type == "ISFJ":
-            dispatcher.utter_message("Du bist ISFJ")
+            dispatcher.utter_message("Du bist ISFJ. Lovely!")
         elif personality_type == "ESTJ":
-            dispatcher.utter_message("Du bist ESTJ")
+            dispatcher.utter_message("Du bist ESTJ. Super!")
         elif personality_type == "ESFJ":
             dispatcher.utter_message("Du bist ESFJ. Du kleiner social butterfly du. 🥰")
         elif personality_type == "ISTP":
-            dispatcher.utter_message("Du bist ISTP")
+            dispatcher.utter_message("Du bist ISTP. Super!")
         elif personality_type == "ISFP":
-            dispatcher.utter_message("Du bist ISFP")
+            dispatcher.utter_message("Du bist ISFP. Super!")
         elif personality_type == "ESTP":
-            dispatcher.utter_message("Du bist ESTP")
+            dispatcher.utter_message("Du bist ESTP. Super!")
         elif personality_type == "ESFP":
-            dispatcher.utter_message("Du bist ESFP")
+            dispatcher.utter_message("Du bist ESFP. Super!")
 
         
 
@@ -268,10 +268,12 @@ class ActionPrompt(Action):
             # so für jede personality benennen 
             chosenPromptPersonality = listePers[randomZahl]
 
+
+
         elif personality_type == "INTP":
 
             randomZahl = random.randint(0,4) 
-            listePers = ["mit genmutiertem Mais experimentiert.", "die Antarktis erforscht.", "einen Chatbot entwickelt.", "sich selbst feiert.", "ein Rückwärtssalto versucht."]
+            listePers = ["mit genmutiertem Mais experimentiert.", "die Antarktis erforscht.", "einen Chatbot entwickelt.", "sich selbst feiert.", "einen Rückwärtssalto versucht."]
             chosenPromptPersonality = listePers[randomZahl]
 
         elif personality_type == "ESFJ":
@@ -551,7 +553,12 @@ class ActionPrompt(Action):
 
         
 
-
+        if chosenPromptPersonality == "":
+            randZahl = random.randint(0,14)
+            listePers2 = ["auf einer Erbse tanzt.", "über den Sinn des Lebens philosophiert.", "entspannt.", "in die Sterne schaut.", "über Liebe nachdenkt.", "einen Comic liest.",
+                          "mit genmutiertem Mais experimentiert.", "die Antarktis erforscht.", "einen Chatbot entwickelt.", "sich selbst feiert.", "einen Rückwärtssalto versucht.",
+                          "Mensch-ärgere-dich-nicht spielt.", "Menschen beobachtet.", "sich unterhält.", "sich freut."]
+            chosenPromptPersonality = listePers2[randZahl]
 
         # zusammensetzen des gesamten prompts 
         wholePrompt = "Deine personalisierte Idee ist: \n" + chosenPromptForm + " " + chosenPromptColor + " " + chosenPromptStyle + " " + chosenPromptPersonality
