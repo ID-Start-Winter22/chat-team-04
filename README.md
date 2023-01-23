@@ -1,6 +1,6 @@
 # Blank Page
 
-Ein Chatbot welcher zur Ideen- und Inspirationsfindung anregen soll. Durch die Abfrage von Persönlichkeitsmerkmalen und zufälligen Fragen kann der Bot mit seinem Wissen eine individuelle Idee in schriftlicher Form für die Nutzer:innen generieren. Auf Nachfrage kann er auch ein Moodboard mit Farbpalette bereitstellen.
+Ein Chatbot welcher zur Ideen- und Inspirationsfindung anregen soll. Durch die Abfrage von Persönlichkeitsmerkmalen und einigen Fragen kann der Bot mit seinem Wissen eine individuelle Idee in schriftlicher Form für die Nutzer:innen generieren. 
 
 Mehr zum Thema "[Charakter des Chatbots](https://github.com/ID-Start-Winter22/chat-team-04/wiki/Chatbot-Designteil-Entwicklung#verhalten-des-chatbots)" <br>
 Mehr zum Thema "[Beschreibung des Chatbots](https://github.com/ID-Start-Winter22/chat-team-04/wiki)" <br>
